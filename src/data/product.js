@@ -38,7 +38,7 @@ export const SliderProducts = [
   {
     sale: false,
     name: "PINEAPPLE",
-    detail: 'Obviously that\'s not kind of an "Apple".',
+    detail: 'Obviously, that\'s not an "Apple".',
     price: "5",
     type: "",
     img: img3,
