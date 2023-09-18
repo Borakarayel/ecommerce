@@ -1,0 +1,83 @@
+.sContainer {
+  position: relative;
+}
+
+.sContainer .swiper {
+  width: 70%;
+  height: 12rem;
+  position: unset;
+}
+
+.sContainer .swiper-slide {
+  background: white;
+  display: flex;
+  border-radius: 10px;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.sContainer .swiper-button-prev {
+  left: 6rem;
+  color: bisque;
+}
+.sContainer .swiper-button-next {
+  right: 6rem;
+  color: bisque;
+}
+
+.leftS {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name > :nth-child(1) {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.name > :nth-child(2) {
+  font-size: 60%;
+}
+.leftS > :nth-child(2) {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.leftS > :nth-child(3) {
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  font-size: 0.6rem;
+  padding: 5px 10px;
+  width: max-content;
+  cursor: pointer;
+}
+
+.imgP {
+  /* transform: rotate(-40deg); */
+  position: absolute;
+  right: 0;
+  width: 60%;
+  height: 80%;
+  bottom: -5%;
+  z-index: -99;
+}
+
+@media screen and (max-width: 856px) {
+  .sContainer .swiper {
+    width: 90%;
+    height: 10rem;
+  }
+
+  .sContainer .swiper-button-prev,
+  .sContainer .swiper-button-next {
+    display: none;
+  }
+}

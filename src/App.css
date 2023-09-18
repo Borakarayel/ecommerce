@@ -1,0 +1,34 @@
+:root {
+  --black: #343434;
+  --bg: #e9b384;
+  --bg2: #ecdaca;
+  --shadow1: 0px 13px 48px rgba(0, 0, 0, 0.25);
+  --shadow2: 0px 13px 46px rgba(0, 0, 0, 0.13);
+  --pink: #ff9b9b;
+  --hover: #8f5540;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: grey;
+  border-radius: 1ex;
+}
+
+::-webkit-scrollbar-thumb {
+  background: skyblue;
+  border-radius: 1ex;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
