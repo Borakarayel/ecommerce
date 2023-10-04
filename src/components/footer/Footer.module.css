@@ -20,7 +20,7 @@
   align-items: flex-start;
   gap: 1rem;
 }
-.cLogo > img {
+.cLogo > a > img {
   width: 2.5rem;
   height: 2.5rem;
 }

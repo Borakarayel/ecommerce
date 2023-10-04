@@ -11,6 +11,7 @@ import Virtual from "./components/virtual/Virtual";
 function App() {
   return (
     <div className="App">
+      <a className="anchor" id="mainId"></a>
       <Header />
       <Hero />
       <Slider />

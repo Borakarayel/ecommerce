@@ -10,12 +10,20 @@ import {
 } from "@heroicons/react/24/solid";
 
 const Footer = () => {
+  const signUp = () => {
+    alert("Sign up module is not functional.");
+  };
+  const will = () => {
+    alert("This section will be added.");
+  };
   return (
     <div className={css.cFooterWrapper}>
+      <a className="anchor" id="footer"></a>
       <hr />
       <div className={css.cFooter}>
         <div className={css.cLogo}>
-          <img src={loggo} alt="Logo" />
+        <a href="#mainId">
+          <img src={loggo} alt="Logo" /> </a>
           <span> eCommerce </span>
         </div>
         <div className={css.block}>
@@ -23,7 +31,7 @@ const Footer = () => {
             <span>Contact Us</span>
             <span className={css.pngLine}>
               <MapPinIcon className={css.icon} />
-              <span>111 NorthWest Street, Istanbul, Turkey 23575</span>
+              <span>NorthWest Street, North, West 12345</span>
             </span>
             <span className={css.pngLine}>
               <PhoneIcon className={css.icon} />
@@ -42,7 +50,7 @@ const Footer = () => {
             <span>Account</span>
             <span className={css.pngLine}>
               <ArrowLeftOnRectangleIcon className={css.icon} />
-              <span>Sign In</span>
+              <span onClick={signUp}>Sign In</span>
             </span>
           </div>
         </div>
@@ -51,7 +59,7 @@ const Footer = () => {
             <span>Company</span>
             <span className={css.pngLine}>
               <HomeModernIcon className={css.icon} />
-              <span>About Us</span>
+              <span onClick={will}>About Us</span>
             </span>
           </div>
         </div>
@@ -60,7 +68,7 @@ const Footer = () => {
             <span>Resources</span>
             <span className={css.pngLine}>
               <LinkIcon className={css.icon} />
-              <span> Terms & Conditions</span>
+              <span onClick={will}> Terms & Conditions</span>
             </span>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import React from "react";
 import css from "./Virtual.module.css";
 import ReactCompareImage from "react-compare-image";
 import Before from "../../assets/virtual1.jpg";
@@ -9,7 +8,10 @@ const Virtual = () => {
     <div className={css.virtual}>
       <div className={css.left}>
         <span>Virtual Try-on</span>
-        <span>We only offer you the freshest products</span>
+        <span>
+          We promise you the freshest products. You can see the difference on
+          right side.
+        </span>
         <span>See the difference!</span>
       </div>
       <div className={css.right}>
@@ -20,6 +22,7 @@ const Virtual = () => {
           ></ReactCompareImage>
         </div>
       </div>
+      <a className="anchor" id="fresh"></a>
     </div>
   );
 };

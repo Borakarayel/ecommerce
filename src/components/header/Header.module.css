@@ -1,6 +1,11 @@
 .container {
-  padding: 1.5rem;
   display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid var(--black);
 }
 
 .logo {
@@ -10,7 +15,7 @@
   flex: 1;
 }
 
-.logo > img {
+.logo > a > img {
   width: 2.5rem;
   height: 2.5rem;
 }
@@ -22,6 +27,7 @@
 .right {
   display: flex;
   gap: 2rem;
+  padding: 0rem 1rem;
   align-items: center;
   justify-content: center;
 }

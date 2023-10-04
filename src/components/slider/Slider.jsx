@@ -9,6 +9,7 @@ import { SliderProducts } from "../../data/product";
 const Slider = () => {
   return (
     <div className="sContainer">
+      <a className="anchor" id="fresh"></a>
       <Swiper
         breakpoints={{
           640: {

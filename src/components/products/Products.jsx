@@ -13,12 +13,13 @@ const Products = () => {
     setMenuproducts(ProductData.filter((item) => item.type === type));
   };
 
-  const filterSale = (sale) => {
+  const filterSale = () => {
     setMenuproducts(ProductData.filter((item) => item.sale === true));
   };
 
   return (
     <div className={css.container}>
+      <a className="anchor" id="productsId"></a>
       <img src={plane} alt="" />
       <h1>Our Featured Products</h1>
       <div className={css.products}>
